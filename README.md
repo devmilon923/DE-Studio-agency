@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DE STUDIO - Creative Agency Website
 
-## Getting Started
+A modern, fully responsive agency website showcasing brand identity, web design, and development services. Built with Next.js, React, and Framer Motion for stunning animations.
 
-First, run the development server:
+## 🌐 Live Demo
+
+**Live Website:** [https://de-studio.vercel.app](https://de-studio.vercel.app)
+
+## 📦 Repository
+
+**Clone the Repository:**
+
+```bash
+git clone https://github.com/devmilon923/DE-Studio-agency.git
+cd DE-Studio-agency
+```
+
+## 📋 Project Overview
+
+### Objectives
+
+- **Frontend-Only Design**: Beautifully crafted frontend interface for an agency website
+- **JSON-Driven Content**: All dynamic content (projects, testimonials, team members, FAQs) is managed through JSON data structures
+- **Reusable Components**: Modular component architecture for easy extension and customization
+- **Easy Maintenance**: Clean code structure with separated concerns for simple updates and maintenance
+- **Modern Tech Stack**: Built with cutting-edge technologies for optimal performance and user experience
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Install dependencies:**
+
+```bash
+npm install
+```
+
+2. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 16+ with TypeScript
+- **UI Library**: React 19+
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Font**: Geist Font Family
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+agency-website/
+├── app/
+│   ├── components/
+│   │   ├── CustomCursor.tsx         # Custom mouse cursor component
+│   │   ├── FAQSection.tsx           # FAQ accordion section
+│   │   └── [other sections]
+│   ├── modal/
+│   │   ├── modal.tsx                # Contact modal form
+│   │   └── ContactModalButton.tsx   # Modal trigger button
+│   ├── layout.tsx                   # Root layout with metadata
+│   ├── page.tsx                     # Home page (server component)
+│   └── globals.css                  # Global styles
+├── public/                          # Static assets
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── tailwind.config.ts
+```
 
-## Deploy on Vercel
+## 🎨 Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Server & Client Components Architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Server Components**: Main page and sections render on the server for better performance
+- **Client Components**: Interactive elements (modal, animations, FAQ) use client components with proper state management
+
+### Interactive Elements
+
+- ✨ Custom animated cursor
+- 🎭 Smooth page transitions with Framer Motion
+- 📋 Expandable FAQ accordion
+- 💬 Contact modal form
+- 🖼️ Project showcase grid
+- 👥 Team member profiles
+- ⭐ Client testimonials
+
+### Data Management
+
+All dynamic content is managed through JSON structures within component files:
+
+- Projects data
+- Testimonials
+- Team members
+- FAQs
+- Services
+
+## 📝 Customization Guide
+
+### Update Project Data
+
+Edit the data objects in `app/page.tsx`:
+
+```tsx
+const projects = [
+  {
+    title: "Your Project",
+    category: "Your Category",
+    image: "image-url",
+  },
+  // ... more projects
+];
+```
+
+### Modify Colors & Styling
+
+Update Tailwind CSS classes or create custom CSS in `app/globals.css`
+
+### Add New Sections
+
+Create new components in `app/components/` and import them in `app/page.tsx`
+
+## 🔒 Performance & SEO
+
+- Server-side rendering for better SEO
+- Optimized metadata with Open Graph support
+- Image optimization with Next.js Image
+- Fast page transitions with Framer Motion
+- Mobile-first responsive design
+
+## 📱 Responsive Design
+
+- Desktop-first approach
+- Fully responsive from mobile to 4K displays
+- Touch-friendly interface elements
+
+## 🚀 Deployment
+
+The website is optimized for Vercel deployment:
+
+```bash
+npm run build
+vercel deploy
+```
+
+## 📄 License
+
+This project is open source and available for personal and commercial use.
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for any improvements.
+
+## 📞 Contact
+
+**Email**: hello@destudio.design
+
+For more information, visit: [https://de-studio.vercel.app](https://de-studio.vercel.app)
+
+---
+
+**Built with ❤️ by DE STUDIO**
