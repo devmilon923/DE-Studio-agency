@@ -15,8 +15,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DE-Studio",
-  description: "Build by milon",
+  title: "DE STUDIO | Brand Identity, Web Design & Development Agency",
+  description:
+    "Full-service creative studio specializing in brand identity, web design, and scalable development. We craft digital brands & products that drive results.",
+  keywords:
+    "brand identity, web design, development, creative agency, digital branding, React, Next.js, Webflow",
+  authors: [{ name: "DE STUDIO" }],
+  openGraph: {
+    title: "DE STUDIO | Brand Identity, Web Design & Development",
+    description:
+      "Full-service creative studio specializing in brand identity, web design, and scalable development.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DE STUDIO | Creative Agency",
+    description: "We craft digital brands & products that drive results.",
+  },
 };
 
 export default function RootLayout({
