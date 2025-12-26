@@ -170,11 +170,11 @@ This project is open source and available for personal and commercial use.
 
 Feel free to fork this project and submit pull requests for any improvements.
 
-## 📞 Contact
+## 📞 Developer Contact
 
-**Email**: hello@destudio.design
+**Email**: dev.milon923@gmail.com
 
-For more information, visit: [https://de-studio.vercel.app](https://de-studio.vercel.app)
+For more information, visit: [https://devmilon.netlify.app](https://devmilon.netlify.app)
 
 ---
 
