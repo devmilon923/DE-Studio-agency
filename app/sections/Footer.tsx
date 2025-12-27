@@ -27,6 +27,7 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-20 text-[11px] font-bold uppercase tracking-[0.3em] text-gray-500">
             <div className="space-y-6">
+              <span className="block text-white">Get in touch</span>
               <a
                 href="#"
                 className="block hover:text-rose-600 transition-colors"
