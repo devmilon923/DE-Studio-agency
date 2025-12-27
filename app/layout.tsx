@@ -43,10 +43,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Header />
-        {children}
+        <div className="pt-44 pb-20 px-6">{children}</div>
         <Footer />
       </body>
     </html>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import ContactModal from "../modal/modal";
+import Link from "next/link";
 export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => setIsModalOpen(!isModalOpen);
@@ -33,7 +34,7 @@ export default function HeroSection() {
     },
   ];
   return (
-    <section className="pt-44 pb-20 px-6 overflow-hidden">
+    <section className=" overflow-hidden mb-10">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -110,9 +111,11 @@ export default function HeroSection() {
           </div>
 
           <div className="flex justify-center mt-16">
-            <button className="border cursor-pointer border-white/20 bg-transparent hover:bg-white hover:text-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-300">
-              View More Work
-            </button>
+            <Link href={"/works"} className="">
+              <button className="border cursor-pointer border-white/20 bg-transparent hover:bg-white hover:text-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs transition-all duration-300">
+                View More Work
+              </button>
+            </Link>
           </div>
         </div>
       </div>

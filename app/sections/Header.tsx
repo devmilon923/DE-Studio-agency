@@ -15,21 +15,30 @@ export default function Header() {
             </div>
           </Link>
           <nav className="hidden md:flex gap-10 text-[11px] uppercase tracking-[0.2em] font-bold text-gray-400">
-            <a href="#work" className="hover:text-white transition-colors">
+            <a href="/#work" className="hover:text-white transition-colors">
               Work
             </a>
-            <a href="#services" className="hover:text-white transition-colors">
+            <Link
+              href="/#services"
+              className="hover:text-white transition-colors"
+            >
               Services
-            </a>
-            <a href="#reviews" className="hover:text-white transition-colors">
+            </Link>
+            <Link
+              href="/#reviews"
+              className="hover:text-white transition-colors"
+            >
               Reviews
-            </a>
-            <a href="#team" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/#team" className="hover:text-white transition-colors">
               Team
-            </a>
-            <a href="#contact" className="hover:text-white transition-colors">
+            </Link>
+            <Link
+              href="/#contact"
+              className="hover:text-white transition-colors"
+            >
               Contact
-            </a>
+            </Link>
           </nav>
           <button
             onClick={toggleModal}
